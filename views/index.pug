@@ -1,0 +1,61 @@
+//- index.pug
+doctype html
+html
+  head
+    title Shaun MMA Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div Welcome to Shaun's MMA Academy
+        div.small Eat Sleep TRAIN Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Defence Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.jpg")
+                div.card-content
+                    p Boxing basics and contests with fighters
+        div.card
+            h3 Best trainers
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.jpg")
+                div.card-content
+                    p Mixed Martial Arts specialist trainers
+        div.card
+            h3 FIT Physique
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpg")
+                div.card-content
+                    p Wrestling with experienced fighters
+
+    section#sponsorsSection
+        h2 Our Sponsors
+           div(style="display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between;")
+           img(src="/static/img/logo1.png", style="width: 150px; height: 150px; margin-right: 20px;")
+           img(src="/static/img/logo2.png", style="width: 150px; height: 150px; margin-right: 20px;")
+           img(src="/static/img/logo3.png", style="width: 150px; height: 150px; margin-right: 20px;")
+           img(src="/static/img/logo4.png", style="width: 180px; height: 150px;")
+
+
+    footer#footer
+        | Copyright © 2023 ShaunAcademy.com | All Rights Reserved
+        
+    script
+      include ../static/index.js
